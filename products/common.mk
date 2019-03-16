@@ -1,4 +1,4 @@
-# Generic product
+ # Generic product
 PRODUCT_NAME := nitrogen
 PRODUCT_BRAND := nitrogen
 PRODUCT_DEVICE := oneplus6
@@ -84,6 +84,9 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    ims-ext-common \
 #    telephony-ext
+
+PRODUCT_PACKAGES += \
+     NoCutoutOverlay
 
 #PRODUCT_BOOT_JARS += \
 #    telephony-ext
