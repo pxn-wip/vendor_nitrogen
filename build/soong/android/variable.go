@@ -77,6 +77,9 @@ type Product_variables struct {
         }
 	Target_camera_needs_client_info struct {
 		Cppflags []string
+        }
+	Needs_netd_direct_connect_rule struct {
+		Cflags []string
 	}
 }
 
@@ -105,4 +108,5 @@ type ProductVariables struct {
 	Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
 	Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
 	Target_camera_needs_client_info  					*bool `json:",omitempty"`
+	Needs_netd_direct_connect_rule  *bool `json:",omitempty"`
 }
