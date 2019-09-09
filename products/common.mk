@@ -86,7 +86,8 @@ PRODUCT_PACKAGES += \
 #    telephony-ext
 
 PRODUCT_PACKAGES += \
-     NoCutoutOverlay
+     NoCutoutOverlay \
+    PixelSetupWizardOverlay
 
 #PRODUCT_BOOT_JARS += \
 #    telephony-ext
