@@ -74,6 +74,9 @@ type Product_variables struct {
 	Needs_camera_boottime_timestamp struct {
 		Cflags []string
 		Srcs []string
+        }
+	Target_camera_needs_client_info struct {
+		Cppflags []string
 	}
 }
 
@@ -101,4 +104,5 @@ type ProductVariables struct {
 	Uses_qcom_um_4_9_family  *bool `json:",omitempty"`
 	Uses_qcom_um_4_14_family  *bool `json:",omitempty"`
 	Needs_camera_boottime_timestamp  *bool `json:",omitempty"`
+	Target_camera_needs_client_info  					*bool `json:",omitempty"`
 }
