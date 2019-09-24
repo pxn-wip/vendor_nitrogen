@@ -101,7 +101,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/pixen/prebuilt/common/addon.d/50-pixen.sh:system/addon.d/50-pixen.sh \
     vendor/pixen/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/pixen/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions
+    vendor/pixen/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/pixen/prebuilt/common/bin/system-mount.sh:install/bin/system-mount.sh
 
 # Priv-app config
 PRODUCT_COPY_FILES += \
