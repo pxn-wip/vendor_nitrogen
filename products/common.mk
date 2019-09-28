@@ -1,7 +1,9 @@
 # Generic product
 PRODUCT_NAME := nitrogen
 PRODUCT_BRAND := nitrogen
-PRODUCT_DEVICE := generic
+PRODUCT_DEVICE := oneplus6
+
+PIXEN_VERSION := PiXeN-OS-10-$(PRODUCT_DEVICE)-$(shell date +"%Y%m%d")-$(shell date -u +%H)$(shell date -u +%M)-OFFICIAL
 
 NITROGEN_BUILD_DATE := $(shell date -u +%Y%m%d-%H%M)
 
