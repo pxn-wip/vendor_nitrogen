@@ -48,8 +48,8 @@ PRODUCT_COPY_FILES +=  \
     vendor/nitrogen/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
 PRODUCT_COPY_FILES +=  \
- vendor/nitrogen/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml
-
+ vendor/nitrogen/config/permissions/privapp-permissions-custom.xml:system/etc/permissions/privapp-permissions-custom.xml \
+ vendor/nitrogen/prebuilt/common/etc/init/custom-livedisplay.rc:system/etc/init/custom-livedisplay.rc
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
@@ -109,3 +109,5 @@ $(call inherit-product-if-exists, vendor/nitrogen/products/bootanimation.mk)
 
 # Nitrogen OTA
 #$(call inherit-product-if-exists, vendor/nitrogen/products/ota.mk)
+
+#include device/lineage/sepolicy/common/sepolicy.mk
