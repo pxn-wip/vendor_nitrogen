@@ -6,12 +6,12 @@ import (
 	"android/soong/android"
 )
 
-func nitrogenExpandVariables(ctx android.ModuleContext, in string) string {
-	nitrogenVars := ctx.Config().VendorConfig("nitrogenVarsPlugin")
+func pixenExpandVariables(ctx android.ModuleContext, in string) string {
+	pixenVars := ctx.Config().VendorConfig("pixenVarsPlugin")
 
 	out, err := android.Expand(in, func(name string) (string, error) {
-		if nitrogenVars.IsSet(name) {
-			return nitrogenVars.String(name), nil
+		if pixenVars.IsSet(name) {
+			return pixenVars.String(name), nil
 		}
 		// This variable is not for us, restore what the original
 		// variable string will have looked like for an Expand
