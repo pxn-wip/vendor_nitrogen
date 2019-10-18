@@ -4,4 +4,4 @@
 #
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    vendor/pixen/sepolicy
+    vendor/nitrogen/sepolicy

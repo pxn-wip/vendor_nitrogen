@@ -1,14 +1,14 @@
 bootstrap_go_package {
-    name: "soong-pixen",
-    pkgPath: "pixen/soong/android",
+    name: "soong-nitrogen",
+    pkgPath: "nitrogen/soong/android",
     srcs: [
         "android/variable.go",
     ],
 }
 
 bootstrap_go_package {
-    name: "soong-pixen-generator",
-    pkgPath: "pixen/soong/generator",
+    name: "soong-nitrogen-generator",
+    pkgPath: "nitrogen/soong/generator",
     deps: [
         "blueprint",
         "blueprint-pathtools",
@@ -23,7 +23,7 @@ bootstrap_go_package {
     pluginFor: ["soong_build"],
 }
 
-pixen_generator {
+nitrogen_generator {
     name: "generated_kernel_includes",
 
     // The headers make command

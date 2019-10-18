@@ -18,10 +18,10 @@
 $(call project-set-path-variant,ril,TARGET_RIL_VARIANT,hardware/ril)
 
 # Include board/platform macros
-include vendor/pixen/build/core/utils.mk
+include vendor/nitrogen/build/core/utils.mk
 
 # Include vendor platform definitions
-include vendor/pixen/build/core/vendor/*.mk
+include vendor/nitrogen/build/core/vendor/*.mk
 
 # Rules for QCOM targets
-include $(TOPDIR)vendor/pixen/build/core/qcom_target.mk
+include $(TOPDIR)vendor/nitrogen/build/core/qcom_target.mk
