@@ -87,7 +87,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
      NoCutoutOverlay \
-    PixelSetupWizardOverlay
+    PixelSetupWizardOverlay \
+    PixelSetupWizardAodOverlay
 
 # Themed bootanimation
 TARGET_MISC_BLOCK_OFFSET ?= 0
